@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern job search and recruitment dashboard.">
+  <title>GetJob.com — Find Your Dream Job</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="GetJob home"><span class="brand-mark">DEMO</span> GetJob.com(DEMO)</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="#">Home</a><a href="#about">About Company</a><a href="#jobs">Careers</a><a
+          href="#features">Feature</a><a href="#contact">Contact us</a>
+      </nav>
+      <div class="top-actions">
+        <div class="top-search-wrap" id="topSearchWrap">
+          <input
+            type="search"
+            id="topSearchInput"
+            class="top-search-input"
+            placeholder="Search jobs, skills, or companies..."
+            aria-label="Search jobs"
+          >
+          <button class="icon-btn" id="topSearchBtn" aria-label="Search" title="Search">⌕</button>
+        </div>
+        <button class="icon-btn" aria-label="Notifications">♧</button>
+        <div class="profile">
+          <div class="avatar">JP</div>
+          <div><small>Applicant</small><strong>Joselito Pasculado</strong></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Find your dream job</h1>
+        <p>Looking for jobs? Browse our latest job opening to view</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"></div>
+    </section>
+
+    <form class="filters" id="filterForm">
+      <label class="field"><span>⌕</span><input id="keyword" type="search" placeholder="Search jobs..."></label>
+      <label class="field"><span>⌖</span><select id="location">
+          <option value="">Location: Berlin</option>
+          <option>Berlin</option>
+          <option>London</option>
+          <option>Remote</option>
+          <option>New York</option>
+        </select></label>
+      <label class="field"><span>▣</span><select id="type">
+          <option value="">Job Type: Intern</option>
+          <option>Intern</option>
+          <option>Full-time</option>
+          <option>Part-time</option>
+          <option>Contract</option>
+        </select></label>
+      <label class="field"><span>▤</span><select id="industry">
+          <option value="">Industry: Tech</option>
+          <option>Tech</option>
+          <option>Design</option>
+          <option>Marketing</option>
+          <option>Finance</option>
+        </select></label>
+      <label class="field"><span>◷</span><select id="experience">
+          <option value="">Experience: 1 years</option>
+          <option>Entry level</option>
+          <option>1 years</option>
+          <option>2+ years</option>
+          <option>5+ years</option>
+        </select></label>
+      <button class="primary" type="submit">Apply Now</button>
+    </form>
+
+    <section class="content" id="jobs">
+      <aside class="results">
+        <div class="results-head">
+          <div><strong>Related to "UI/UX Designer"</strong><small id="resultCount">23 Job Position Available</small>
+          </div>
+          <select class="sort" id="sort" aria-label="Sort jobs">
+            <option value="relevance">Sort by: Relevance</option>
+            <option value="az">Name: A–Z</option>
+          </select>
+        </div>
+        <div class="job-list" id="jobList">
+          <article class="job-card" data-title="Product Designer"
+            data-desc="Design and iterate intuitive digital products that delight our users." data-company="Twitter"
+            data-logo="♥" data-color="">
+            <div class="job-top">
+              <div class="company-logo">♥</div>
+              <div class="job-summary">
+                <h3>Product Designer <span style="color:#9a72e8">✦</span></h3>
+                <p>Design and iterate intuitive digital products that delight our users.</p>
+              </div><button class="save-mini" aria-label="Save job">♧</button>
+            </div>
+            <div class="job-meta"><span class="trusted">★ 4.3 Trusted</span><span>23 Applicants</span><span
+                class="verified">✿ Company Verified</span></div>
+          </article>
+          <article class="job-card selected" data-title="Product Designer"
+            data-desc="Drive innovation and enhance the usability and visual appeal of our digital offerings."
+            data-company="GetJob" data-logo="›" data-color="">
+            <div class="job-top">
+              <div class="company-logo">›</div>
+              <div class="job-summary">
+                <h3>Product Designer <span style="color:#9a72e8">✦</span></h3>
+                <p>Drive innovation and enhance the usability and visual appeal of our digital offerings.</p>
+              </div><button class="save-mini" aria-label="Save job">♧</button>
+            </div>
+            <div class="job-meta"><span class="trusted">★ 4.3 Trusted</span><span>23 Applicants</span><span
+                class="verified">✿ Company Verified</span></div>
+          </article>
+          <article class="job-card" data-title="Product Designer"
+            data-desc="Discover valuable insights through user research to inform design decisions."
+            data-company="Adobe" data-logo="A" data-color="red">
+            <div class="job-top">
+              <div class="company-logo red">A</div>
+              <div class="job-summary">
+                <h3>Product Designer <span style="color:#9a72e8">✦</span></h3>
+                <p>Discover valuable insights through user research to inform design decisions.</p>
+              </div><button class="save-mini" aria-label="Save job">♧</button>
+            </div>
+            <div class="job-meta"><span class="trusted">★ 4.3 Trusted</span><span>23 Applicants</span><span
+                class="verified">✿ Company Verified</span></div>
+          </article>
+          <article class="job-card" data-title="Product Designer"
+            data-desc="Shape the overall design direction of our projects." data-company="Dribbble" data-logo="◉"
+            data-color="purple">
+            <div class="job-top">
+              <div class="company-logo purple">◉</div>
+              <div class="job-summary">
+                <h3>Product Designer <span style="color:#9a72e8">✦</span></h3>
+                <p>Shape the overall design direction of our projects.</p>
+              </div><button class="save-mini" aria-label="Save job">♧</button>
+            </div>
+            <div class="job-meta"><span class="trusted">★ 4.3 Trusted</span><span>23 Applicants</span><span
+                class="verified">✿ Company Verified</span></div>
+          </article>
+          <article class="job-card" data-title="Product Designer"
+            data-desc="Drive innovation and enhance the usability and visual appeal of our digital offerings."
+            data-company="Creative Studio" data-logo="◎" data-color="coral">
+            <div class="job-top">
+              <div class="company-logo coral">◎</div>
+              <div class="job-summary">
+                <h3>Product Designer <span style="color:#9a72e8">✦</span></h3>
+                <p>Drive innovation and enhance the usability and visual appeal of our digital offerings.</p>
+              </div><button class="save-mini" aria-label="Save job">♧</button>
+            </div>
+            <div class="job-meta"><span class="trusted">★ 4.3 Trusted</span><span>23 Applicants</span><span
+                class="verified">✿ Company Verified</span></div>
+          </article>
+        </div>
+        <div class="empty" id="emptyState">No matching jobs found. Try another keyword.</div>
+      </aside>
+
+      <article class="detail" aria-live="polite">
+        <div class="detail-head">
+          <div class="detail-logo" id="detailLogo">›</div>
+          <div class="detail-title">
+            <h2 id="detailTitle">Product Designer <span style="color:#9a72e8">✦</span></h2>
+            <p id="detailCompany">GetJob.co · Berlin · Internship · Tech</p>
+          </div>
+          <div class="detail-actions"><button class="primary" id="applyBtn">Apply Now</button><button class="outline"
+              id="saveBtn">Save</button></div>
+        </div>
+        <section class="section">
+          <h3>Job Overview <span>✦</span></h3>
+          <p>GetJob is an innovative software-as-a-service (SaaS) company. Our mission is to empower businesses and
+            professionals to progress effortlessly. Our products help teams, brands, and organizations build meaningful
+            connections and achieve their goals.</p>
+          <p>To reach millions, we need more people like you: energetic, builders, owners inside the company who are
+            ready to grow and create. Join us to empower more businesses with technology.</p>
+          <p>We are seeking a <strong>Product Designer (UI/UX Designer)</strong> to join our team!</p>
+          <p id="selectedDescription">As a Product Designer, you will be responsible for creating intuitive and visually
+            appealing digital products that meet the needs of our users. You will collaborate with cross-functional
+            teams to design and deliver high-quality user experiences.</p>
+        </section>
+        <section class="section" id="features">
+          <h3>What You Will Do <span>✦</span></h3>
+          <ul>
+            <li>Design and develop user-friendly digital experiences.</li>
+            <li>Collaborate with product managers and developers.</li>
+            <li>Conduct research and use feedback to improve product design.</li>
+            <li>Maintain consistent design systems and visual standards.</li>
+          </ul>
+        </section>
+        <section class="section">
+          <h3>Who We Are Looking For <span>✦</span></h3>
+          <p>We are looking for a creative and curious designer who enjoys solving problems and turning ideas into
+            clear, useful experiences. You communicate well, welcome feedback, and enjoy working with a collaborative
+            team.</p>
+        </section>
+        <div class="about-company" id="about">
+          <div>
+            <h3>About <span id="aboutCompanyName">GetJob</span> <span style="color:#9a72e8">✦</span></h3>
+            <p>We help people discover meaningful career opportunities and help growing teams connect with talented
+              professionals.</p>
+          </div>
+          <button class="follow" id="followBtn">Follow</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
